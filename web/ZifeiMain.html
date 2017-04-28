@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css.css" >
+<!-- 
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<title>ZifeiMain</title>
+</head>
+<style type = "text/css">
+	img{
+		margin: auto;
+	}
+	</style>
+<body>
+	<div class="div_navbar">
+	<nav class="navbar navbar-default">
+		  <ul class="nav navbar-nav">
+      		<li><a href="#">Home</a></li>
+            <li><a href="#div_intro">ABOUT ME</a></li>
+      		<li><a href="#div_experience">ACTIVITY</a></li>
+      		<li><a href="#div_project">PROJECT</a></li>
+      		<li><a href="#div_contact">CONTACT</a></li>   
+    </ul>
+    </nav>
+</div>
+        <div class = "full-bg-img flex-center text-center div_first scrolling" >
+			<img  src="img/intro_background.png" class="img-responsive">
+		</div>
+	
+    <!-- Breif introduction -->
+    <div class="text-center full-bg-img scrolling" id="div_intro">
+        <h3 class="section_name">About me</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                I am a freshman in University of Illinois at Urbana-Champaign. I want to be a computer scientist one day. Now I am taking class about Data Structure and Calculus and I will take some stats class next semester. I am interested in Computer Vision and software design. In the future I hope I can have more opportunities to explore this field.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/img_profile.jpg" class="img-responsive img-circle" id="img_profile" alt="My profile picture">
+            </div>
+        </div>
+    </div>
+<!--	ACTIVITY-->
+	<div class=" text-center contents full-bg-img scrolling" id="div_experience">
+	<h3 class ="section_name"> My experience</h3>
+		<div class = "row">
+			<div class="col-md-4">
+				<btn>
+					<img src="img/volunteer.png" style="width:50%;" class=" img-responsive img-example" data-toggle = "modal" data-target = "#habitat">
+					<h4>Volunteer</h4>
+				</btn>
+			</div>
+			<div class="col-md-4">
+				<img src="img/frisbee.png" class="img-example img-responsive img-rounded" data-toggle = "modal" data-target = "#frisbee">
+				<h4> Activity</h4>
+			</div>
+			<div class="col-md-4">
+			  <img src="img/work.png" width="55%" class="img-responsive img-example" data-toggle = "modal" data-target = "#work">
+				<h4> Experience</h4>
+		  </div>
+		</div>
+			
+	</div>
+<!--PROJECT		-->
+	<div class="text-center contents full-bg-img scrolling" id = "div_project">
+	<h3 class="section_name"> Project and skills</h3>
+		<div class = "row">
+			<div class="col-md-4">
+				<video width="400" controls>
+  					<source src="cvproject.mp4" type="video/mp4">
+ 					 Your browser does not support HTML5 video.
+				</video>
+				<h4> OpenCV Project</h4>
+			</div>
+			<div class="col-md-8">
+				<table class="table table-skill">
+					<col width="30%">
+					<col width="70%">
+					<tr>
+						<td>Java</td>
+						<td>* * *</td>
+					</tr>
+					<tr>
+						<td>C++</td>
+						<td>* *</td>
+					</tr>
+					<tr>
+						<td>Python</td>
+						<td>* *</td>
+					</tr>
+					<tr>
+						<td>CSS</td>
+						<td>* * *</td>
+					</tr>
+					<tr>
+						<td>HTML</td>
+						<td>* * *</td>
+					</tr>					
+					<tr>
+						<td>Android App Development</td>
+						<td>* *</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+			
+	</div>
+<!--email-->
+ 	<div class = "text-center" id ="div_contact">
+ 	<h4 class="section_name">Contact me</h4>
+ 	<div class="row">
+      <div class="col-md-4">
+          <a href= "mailto:zifeifeng11@gmail.com?Subject=Hello,%20Zifei"><img class = "img-circle img-thumbnail logo" src = "img/social/email.svg"></a>
+      </div>
+      <div class="col-md-4">
+          <a href= "#" target="_blank"><img class = "img-circle img-thumbnail logo" src = "img/social/linkedin.svg"></a>
+      </div>  
+      <div class="col-md-4">
+          <a href= "https://www.facebook.com/zifei.feng" target="_blank"><img class = "img-circle img-thumbnail logo" src = "img/social/facebook.svg"></a>
+      </div> 
+
+    </div>
+ 	</div>
+  <!--	modal-->
+   <div class="modal fade" id="habitat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Volunteer</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-stripe">
+                    	<tr>
+                    		<th>Title</th>
+                    		<th>Location</th>
+                    		<th>Date</th>
+                    		<th>What I did</th>
+                    	</tr>
+                    	<tr>
+                    		<td>Habitat for Humanity Winter Colleage Trip</td>
+                    		<td>Lafayette, LA</td>
+                    		<td>2017.1.9 - 2017.1.14</td>
+                    		<td>Building house !!!</td> 
+                    	</tr>
+                    	<tr>
+                    		<td>Introduce a Girl to Engineering Dat</td>
+                    		<td>Champaign-Urbana, IL</td>
+                    		<td>2017.2.18</td>
+                    		<td>Leading girls to finish a great project</td>
+                    	</tr>
+                    	<tr>
+                    		<td>Krannert Center Volunteer Usher</td>
+                    		<td>Champaign-Urbana, IL</td>
+                    		<td>2016.8 - Current</td>
+                    		<td>Show people seats</td>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="frisbee" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">Activity</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-stripe">
+                    	<tr>
+                    		<th>Title</th>
+                    		<th>Location</th>
+                    		<th>Date</th>
+                    		<th>What I did</th>
+                    	</tr>
+                    	<tr>
+                    		<td>Women's Ultimate Frisbee</td>
+                    		<td>Urbana-Champaign, IL</td>
+                    		<td>2016.8 - Current</td>
+                    		<td>Play frisbee</td> 
+                    	</tr>
+                    	<tr>
+                    		<td>Association of Data Science and Analysize</td>
+                    		<td>Champaign-Urbana, IL</td>
+                    		<td>2017.2.14 - Current</td>
+                    		<td>Conduct a project</td>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="work" bindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" >
+                    <h4 class="modal-title" id="myModalLabel3"> Work Experience </h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-stripe">
+                    	<tr>
+                    		<th>Title</th>
+                    		<th>Location</th>
+                    		<th>Date</th>
+                    		<th>What I did</th>
+                    	</tr>
+                    	<tr>
+                    		<td>Computer Science Course Assistant</td>
+                    		<td>Urbana-Champaign, IL</td>
+                    		<td>2017.1 - Current</td>
+                    		<td>Teach students</td> 
+                    	</tr>
+                    	<tr>
+                    		<td>University Housing Student Server</td>
+                    		<td>Champaign-Urbana, IL</td>
+                    		<td>2017.2 - 2017.3</td>
+                    		<td>Serve food and feed student</td>
+                    	</tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
